@@ -7,7 +7,6 @@ import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
