@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<button (click)="addinput()">add input</button>
+<form [formGroup]="form">
+  <div formArrayName="CustomDetails">
+    <div *ngFor="let x of customDetails.controls ; let i = index;" [formGroupName]="i">
+      <input type="text" />
+      <button (click)="delInput(i)">del input</button>
+    </div>
+  </div>
+</form>
